@@ -1,9 +1,21 @@
-export default function MentorBookingPage({ params }: { params: { mentorId: string } }) {
+import MentorBookingBody from '@/components/mentor/booking/mentor-booking-body'
+import MentorBookingHeader from '@/components/mentor/booking/mentor-booking-header'
+import { mentorProfile } from '@/lib/mock/mentor'
+
+interface MentorBookingPageParams {
+  mentorId: string
+}
+
+export default async function MentorBookingPage({ params }: { params: MentorBookingPageParams }) {
+  const { mentorId } = await params
+  console.log('멘토 예약 페이지:', mentorId)
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-20">
-      <h1 className="text-3xl font-medium text-pretty">멘토 예약 페이지</h1>
-      <p className="mt-4 text-lg text-gray-600">멘토 ID: {params.mentorId}</p>
-      {/* 여기에 멘토 프로필 관련 컴포넌트를 추가하세요 */}
+    <div className="w-ful flex flex-col items-center justify-center bg-blue-200 py-10 lg:py-20">
+      <div className="flex w-full max-w-[1024px] flex-col items-center gap-12 bg-violet-200 px-8">
+        <MentorBookingHeader mentorProfile={mentorProfile} />
+        <MentorBookingBody />
+      </div>
     </div>
   )
 }
