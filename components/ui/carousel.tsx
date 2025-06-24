@@ -1,5 +1,5 @@
 'use client'
-import * as React from 'react'
+import { Children, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils' // 클래스 병합 헬퍼가 있다면
 
@@ -9,8 +9,8 @@ interface CarouselProps {
 }
 
 export default function Carousel({ children, className }: CarouselProps) {
-  const total = React.Children.count(children) // 슬라이드 개수
-  const [current, setCurrent] = React.useState(0) // 현재 인덱스
+  const total = Children.count(children) // 슬라이드 개수
+  const [current, setCurrent] = useState(0) // 현재 인덱스
 
   const prev = () => setCurrent((i) => (i === 0 ? total - 1 : i - 1))
   const next = () => setCurrent((i) => (i === total - 1 ? 0 : i + 1))
