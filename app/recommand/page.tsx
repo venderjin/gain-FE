@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Plus } from 'lucide-react'
 
-import { recommandMentors } from '@/lib/mock/mentor'
+import { recommandMentor } from '@/lib/mock/mentor'
 import RecommandMentor from '@/components/recommand/recommand-mentor'
 import Tooltip from '@/components/ui/tooltip'
 
@@ -28,7 +28,7 @@ export default function RecommandPage() {
           </Button>
         </div>
         <div className="grid w-full gap-4 lg:grid-cols-3">
-          {recommandMentors.map((mentor) => (
+          {recommandMentor.map((mentor) => (
             <RecommandMentor key={mentor.id} mentor={mentor} />
           ))}
         </div>

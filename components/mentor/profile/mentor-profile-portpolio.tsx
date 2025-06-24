@@ -1,11 +1,11 @@
 import Carousel from '@/components/ui/carousel'
 
-import { mentorProfileType } from '@/lib/mock/mentor'
+import { MentorProfileType } from '@/lib/mock/mentor'
 
 import { cn } from '@/lib/utils'
 
 interface MentorProfilePortpolioProps {
-  mentorProfile: mentorProfileType
+  mentorProfile: MentorProfileType
   className?: string
 }
 

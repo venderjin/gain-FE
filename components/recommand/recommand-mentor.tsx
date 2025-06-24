@@ -6,10 +6,10 @@ import Star from '@/components/icons/star'
 
 import { Button } from '@/components/ui/button'
 
-import { recommandMentor } from '@/lib/mock/mentor'
+import { RecommandMentorType } from '@/lib/mock/mentor'
 
 interface RecommandMentorProps {
-  mentor: recommandMentor
+  mentor: RecommandMentorType
 }
 
 export default function RecommandMentor({ mentor }: RecommandMentorProps) {

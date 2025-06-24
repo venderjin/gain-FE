@@ -1,15 +1,6 @@
-export type recommandMentor = {
-  id: string
-  name: string
-  title: string
-  hashTags: string[]
-  profileImage: string
-  starRate: number
-  reviewCount: number
-  reviewContent: string
-}
+export type RecommandMentorType = (typeof recommandMentor)[number]
 
-export const recommandMentors: recommandMentor[] = [
+export const recommandMentor = [
   {
     id: '1',
     name: '정민주',
@@ -41,49 +32,11 @@ export const recommandMentors: recommandMentor[] = [
     reviewContent:
       '실제 구직자 입장에서 피드백을 해주셔서 좋았어요. 포트폴리오 방향성부터 디테일까지 꼼꼼하게 봐주셨습니다.',
   },
-]
+] as const
 
-export type mentorProfileType = {
-  id: number
-  name: string
-  title: string
-  hashTags: string[]
-  profileImage: string
-  cumulativeMenteeCount: number
-  responseTime: string
-  review: {
-    id: number
-    mentorId: number
-    menteeName: string
-    menteeProfileImage: string | null
-    starRate: number
-    content: string
-    createdAt: string
-  }[]
-  introduction: string
-  career: {
-    id: number
-    mentorId: number
-    title: string
-    period: string
-    description: string
-  }[]
-  education: {
-    id: number
-    mentorId: number
-    title: string
-    period: string
-    description: string
-  }[]
-  portpolio: {
-    id: number
-    mentorId: number
-    title: string
-    className: string
-  }[]
-}
+export type MentorProfileType = typeof mentorProfile
 
-export const mentorProfile: mentorProfileType = {
+export const mentorProfile = {
   id: 1,
   name: '정민주',
   title: 'Google UX/UI 디자이너',
@@ -201,4 +154,4 @@ export const mentorProfile: mentorProfileType = {
       className: 'bg-blue-300',
     },
   ],
-}
+} as const

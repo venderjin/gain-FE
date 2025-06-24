@@ -5,10 +5,10 @@ import DefaultProfile from '@/components/icons/defaultProfile'
 import Career from '@/components/icons/career'
 import Education from '@/components/icons/education'
 
-import { mentorProfileType } from '@/lib/mock/mentor'
+import { MentorProfileType } from '@/lib/mock/mentor'
 
 interface MentorProfileBodyProps {
-  mentorProfile: mentorProfileType
+  mentorProfile: MentorProfileType
 }
 
 export default function MentorProfileBody({ mentorProfile }: MentorProfileBodyProps) {

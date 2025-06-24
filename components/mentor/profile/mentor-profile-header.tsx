@@ -6,10 +6,10 @@ import Chat from '@/components/icons/chat'
 
 import { Button } from '@/components/ui/button'
 
-import { mentorProfileType } from '@/lib/mock/mentor'
+import { MentorProfileType } from '@/lib/mock/mentor'
 
 interface MentorProfileHeaderType {
-  mentorProfile: mentorProfileType
+  mentorProfile: MentorProfileType
 }
 
 export default function MentorProfileHeader({ mentorProfile }: MentorProfileHeaderType) {
