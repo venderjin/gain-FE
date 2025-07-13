@@ -29,8 +29,7 @@ export const recommandMentor = [
     profileImage: '/mentor3.png',
     starRate: 4.7,
     reviewCount: 530,
-    reviewContent:
-      '실제 구직자 입장에서 피드백을 해주셔서 좋았어요. 포트폴리오 방향성부터 디테일까지 꼼꼼하게 봐주셨습니다.',
+    reviewContent: '실제 구직자 입장에서 피드백을 해주셔서 좋았어요.',
   },
 ] as const
 

@@ -7,8 +7,6 @@ interface MentorBookingHeaderProps {
 }
 
 export default function MentorBookingHeader({ mentorProfile }: MentorBookingHeaderProps) {
-  console.log('멘토 예약 헤더:', mentorProfile)
-
   return (
     <div className="flex flex-row items-center gap-4">
       <div className="relative aspect-square h-full min-h-32 w-auto">
