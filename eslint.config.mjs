@@ -27,6 +27,8 @@ const eslintConfig = [
       'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }],
       'no-console': 'warn',
       'react-hooks/exhaustive-deps': 'off',
+      'no-unused-vars': 'off',
+      "@typescript-eslint/no-unused-vars": ["error"]
     },
   },
 ]

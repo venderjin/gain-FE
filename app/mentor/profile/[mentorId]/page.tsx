@@ -11,7 +11,7 @@ interface MentorProfilePageParams {
   mentorId: string
 }
 
-export default async function MentorProfilePage({ params }: { params: MentorProfilePageParams }) {
+export default async function MentorProfilePage({ params }: { params: Promise<MentorProfilePageParams> }) {
   const { mentorId } = await params
 
   return (

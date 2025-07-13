@@ -2,14 +2,9 @@ import MentorBookingBody from '@/components/mentor/booking/mentor-booking-body'
 import MentorBookingHeader from '@/components/mentor/booking/mentor-booking-header'
 import { mentorProfile } from '@/lib/mock/mentor'
 
-// interface MentorBookingPageParams {
-//   mentorId: string
-// }
-
 export default async function MentorBookingPage() {
-  // { params }: { params: MentorBookingPageParams }
+  // { params }: { params: Promise<{ mentorId: string }> }
   // const { mentorId } = await params
-  // console.log('멘토 ID:', mentorId)
 
   return (
     <div className="w-ful flex flex-col items-center justify-center py-10 lg:py-20">

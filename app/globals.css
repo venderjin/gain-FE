@@ -86,3 +86,66 @@ body {
     }
   }
 }
+
+@theme {
+  --color-white-normal: #ffffff;
+  --color-black-normal: #000000;
+  --color-orange-normal: #ff7a59;
+  --color-gray-normal: #d9d9d9;
+  --color-gray-dark: #4b4a4a;
+
+  --text-title: 2.375rem;
+  --text-title--line-height: 140%;
+  --text-title--letter-spacing: -0.025rem;
+  --text-title--font-weight: 500;
+
+  --text-sub-title: 1.875rem;
+  --text-sub-title--line-height: 140%;
+  --text-sub-title--letter-spacing: -0.025rem;
+  --text-sub-title--font-weight: 400;
+
+  --text-desc: 1.125rem;
+  --text-desc--line-height: 140%;
+  --text-desc--letter-spacing: -0.025rem;
+  --text-desc--font-weight: 400;
+
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 140%;
+  --text-3xl--letter-spacing: -0.025rem;
+  --text-3xl--font-weight: 600;
+
+  --text-2xl: 1.5625rem;
+  --text-2xl--line-height: 140%;
+  --text-2xl--letter-spacing: -0.025rem;
+  --text-2xl--font-weight: 600;
+
+  --text-2xl-medium: 1.5625rem;
+  --text-2xl-medium--line-height: 140%;
+  --text-2xl-medium--letter-spacing: -0.025rem;
+  --text-2xl-medium--font-weight: 500;
+
+  --text-2xl-regular: 1.5625rem;
+  --text-2xl-regular--line-height: 140%;
+  --text-2xl-regular--letter-spacing: -0.025rem;
+  --text-2xl-regular--font-weight: 400;
+
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 140%;
+  --text-xl--letter-spacing: -0.025rem;
+  --text-xl--font-weight: 400;
+
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 150%;
+  --text-lg--letter-spacing: -0.011rem;
+  --text-lg--font-weight: 400;
+
+  --text-lm: 1rem;
+  --text-lm--line-height: 150%;
+  --text-lm--letter-spacing: -0.011rem;
+  --text-lm--font-weight: 600;
+
+  --text-md: 0.9375rem;
+  --text-md--line-height: 140%;
+  --text-md--letter-spacing: -0.025rem;
+  --text-md--font-weight: 400;
+}
