@@ -1,5 +1,4 @@
 import { Paperclip } from 'lucide-react'
-import { useRef } from 'react'
 
 interface BookingStepThreeProps {
   selectedFiles: File[]
@@ -14,9 +13,6 @@ export default function BookingStepThree({
   portfolioLink,
   handlePortfolioLinkChange,
 }: BookingStepThreeProps) {
-  const fileInputRef = useRef<HTMLInputElement>(null)
-  // const [fileNames, setFileNames] = useState<string[]>([])
-
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files
     if (!files) return
@@ -27,20 +23,16 @@ export default function BookingStepThree({
     event.target.value = ''
   }
 
-  const handleClick = () => {
-    fileInputRef.current?.click()
-  }
-
   return (
     <div className="flex w-full flex-col gap-4">
       <h2 className="text-lg font-medium lg:text-2xl">Step 3 | 자료 첨부</h2>
       <div className="space-y-2">
-        <div onClick={handleClick} className="flex w-fit cursor-pointer gap-2">
+        <label htmlFor="file-upload" className="flex w-fit cursor-pointer gap-2">
           <Paperclip className="h-6 w-6 rounded-lg border border-neutral-300 stroke-neutral-400 p-1" />
           <span>포트폴리오 PDF 업로드</span>
-        </div>
+        </label>
         {/* 숨겨진 input */}
-        <input ref={fileInputRef} type="file" accept=".pdf" multiple onChange={handleFileSelect} hidden />
+        <input id="file-upload" type="file" accept=".pdf" multiple onChange={handleFileSelect} hidden />
         {/* 업로드 된 파일 이름 출력 */}
         {selectedFiles.length > 0 && (
           <ul className="mx-8 mt-3 list-disc space-y-1 text-sm text-gray-700">
